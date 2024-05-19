@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="student_teacher_dashboard.css">
+</head>
+<body>
+    <h1>Welcome, Umar Ayoub <br></h1>
+    <h2>Currently Borrowed Books <br>
+    </h2>
+    <div id="borrowedBooksList">
+        <!-- List generated dynamically -->
+    </div>
+    <h2>Request for a Book</h2>
+    <form action="request_book.php" method="post">
+        <label for="bookId">Book ID:</label>
+        <input type="text" id="bookId" name="bookId" required><br>
+        <button type="submit">Request Book</button>
+    </form>
+</body>
+</html>

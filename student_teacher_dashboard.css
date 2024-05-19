@@ -1,0 +1,25 @@
+/* student_teacher_dashboard.css */
+
+#borrowedBooksList {
+    margin-top: 20px;
+}
+
+#borrowedBooksList .book {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#borrowedBooksList .book:last-child {
+    border-bottom: none;
+}
+
+.book button {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.book button:hover {
+    background-color: #138496;
+}

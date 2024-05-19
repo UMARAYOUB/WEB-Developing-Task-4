@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin_dashboard.css">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <button onclick="window.location.href='add_book.html'">Add Book</button>
+    <button onclick="window.location.href='view_books.php'">View List of Books</button>
+    <input type="text" id="searchBar" placeholder="Search books...">
+    <button onclick="searchBooks()">Search</button>
+    <h2>Registered Users</h2>
+    <div id="userList">
+        <!-- User list generated dynamically -->
+    </div>
+    <script>
+        function searchBooks() {
+            const query = document.getElementById('searchBar').value;
+            window.location.href = `search_books.php?query=${query}`;
+        }
+    </script>
+</body>
+</html>

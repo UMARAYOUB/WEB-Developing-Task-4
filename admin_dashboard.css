@@ -1,0 +1,34 @@
+/* admin_dashboard.css */
+
+#userList {
+    margin-top: 20px;
+}
+
+#userList .user {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#userList .user:last-child {
+    border-bottom: none;
+}
+
+.user button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.user button:hover {
+    background-color: #c82333;
+}
+
+.user button.suspend {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.user button.suspend:hover {
+    background-color: #e0a800;
+}
